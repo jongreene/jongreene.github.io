@@ -17,5 +17,55 @@
 
 <h1>Error while loading shared libraries</h1>
 <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+
+<h1>Git tips</h1>
+<li>
+  <ul>
+    git tricks-
+      Create a "bare" central repository (they shouldn’t have a working directory):
+        ssh user@host git init --bare /path/to/repo.git
+    </ul>
+    <ul>
+      View the state of the repo:
+        git status
+
+      Stage a file:
+        git add <some-file>
+
+      Commit a file:
+        git commit <some-file>
+
+      push local commits:
+        git push origin master
+
+      re-base branch:
+        git pull --rebase origin master
+
+      cancel/abort a rebase operation:
+        git rebase --abort
+
+    NOTE: The --rebase option tells Git to move all of the local commits to the tip
+    of the master branch after synchronising it with the changes from the central
+    repository (this is a superior option than a merge commit)
+
+    are we going to use pull requests??
+
+    Feature branch (https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)-
+      git checkout master
+      git fetch origin
+      git reset --hard origin/master
+
+    Checkout or if non existent create a branch-
+      git checkout -b new-feature
+
+    Update, add, commit, and push changes
+      git status
+      git add <some-file>
+      git commit
+
+    Push feature branch to remote
+      git push -u origin new-feature
+    </ul>
+  </li>
 </body>
 </html>
