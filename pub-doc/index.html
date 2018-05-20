@@ -12,60 +12,89 @@
 </head>
 
 <body>
-<h1>How to fix "system program problem detected"</h1>
-<p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+  <h1>How to fix "system program problem detected"</h1>
+  <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
 
-<h1>Error while loading shared libraries</h1>
-<p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+  <h1>Error while loading shared libraries</h1>
+  <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
 
-<h1>Git tips</h1>
-<ul>
-  <li>
-    git tricks-
-      Create a "bare" central repository (they shouldn’t have a working directory):
-        ssh user@host git init --bare /path/to/repo.git
-    </li>
-    <li>
-      View the state of the repo:
+  <h1>Git tips</h1>
+    <ul>
+      <li>
+        git tricks-
+        Create a "bare" central repository (they shouldn’t have a working directory):
+        <li>
+          ssh user@host git init --bare /path/to/repo.git
+        </li>
+      </li>
+      <li>
+        View the state of the repo:
+        <li>
+          git status
+        </li>
+      </li>
+      <li>
+        Stage a file:
+        <li>
+          git add <some-file>
+        </li>
+      </li>
+      <li>
+        Commit a file:
+        <li>
+          git commit <some-file>
+        </li>
+      </li>
+      <li>
+        push local commits:
+        <li>
+          git push origin master
+        </li>
+      </li>
+      <li>
+        re-base branch:
+        <li>
+          git pull --rebase origin master
+        </li>
+      </li>
+      <li>
+        cancel/abort a rebase operation:
+        <li>
+          git rebase --abort
+        </li>
+      </li>
+      <li>
+        NOTE: The --rebase option tells Git to move all of the local commits to the tip
+        of the master branch after synchronising it with the changes from the central
+        repository (this is a superior option than a merge commit)
+      </li>
+      <li>
+        are we going to use pull requests??
+      </li>
+      <li>
+        Feature branch (https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)-
+        git checkout master
+        git fetch origin
+        git reset --hard origin/master
+      </li>
+      <li>
+        Checkout or if non existent create a branch-
+        <li>
+          git checkout -b new-feature
+        </li>
+      </li>
+      <li>
+        Update, add, commit, and push changes
         git status
-
-      Stage a file:
         git add <some-file>
-
-      Commit a file:
-        git commit <some-file>
-
-      push local commits:
-        git push origin master
-
-      re-base branch:
-        git pull --rebase origin master
-
-      cancel/abort a rebase operation:
-        git rebase --abort
-
-    NOTE: The --rebase option tells Git to move all of the local commits to the tip
-    of the master branch after synchronising it with the changes from the central
-    repository (this is a superior option than a merge commit)
-
-    are we going to use pull requests??
-
-    Feature branch (https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)-
-      git checkout master
-      git fetch origin
-      git reset --hard origin/master
-
-    Checkout or if non existent create a branch-
-      git checkout -b new-feature
-
-    Update, add, commit, and push changes
-      git status
-      git add <some-file>
-      git commit
-
-    Push feature branch to remote
-      git push -u origin new-feature
-    </li>
-  </ul>
-</body>
+        git commit
+      </li>
+      <li>
+        Push feature branch to remote
+        <li>
+          git push -u origin new-feature
+        </li>
+      </li>
+    </ul>
+  </body>
 </html>
