@@ -1,0 +1,3 @@
+Notes format:
+  notes-<topic>.txt -> ~/Documents/
+  

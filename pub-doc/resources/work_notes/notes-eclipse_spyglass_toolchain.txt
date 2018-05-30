@@ -1,0 +1,15 @@
+Requirements:
+  1. java
+  2. eclipse
+  3. cmake (cmake.org/downloads/)
+  4. gcc-arm-eabi (https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
+  5. gcc-arm-none-eabi
+    https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+    https://gist.github.com/joegoggins/7763637
+  6. gitbash
+
+eclipse setup:
+  help -> market place
+    from market place install
+      GNU MCU
+      CMake Editor

@@ -1,0 +1,12 @@
+Keep computer from sleeping
+  in terminal: caffeinate
+
+Universal search
+  cmd + space
+
+Finder:
+  Go up a level
+    cmd + up arrow
+
+Install putty:
+  brew install --build-from-source --with-gtk+3 putty

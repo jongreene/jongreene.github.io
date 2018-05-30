@@ -1,0 +1,21 @@
+Locations:
+dmg
+  https://jongreene.github.io/pub-doc/resources/test_files/test.dmg
+
+tar.bz2
+  https://jongreene.github.io/pub-doc/test.tar.bz2
+
+tar.gz
+  https://jongreene.github.io/pub-doc/test.tar.gz
+
+txt
+  https://jongreene.github.io/pub-doc/test.txt
+
+zip
+  https://jongreene.github.io/pub-doc/test.zip
+
+png
+  https://jongreene.github.io/pub-doc/test.png
+
+pdf
+  https://jongreene.github.io/pub-doc/test.pdf

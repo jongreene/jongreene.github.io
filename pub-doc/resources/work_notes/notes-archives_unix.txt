@@ -1,0 +1,47 @@
+ZIP – Cross Platform
+  To compress
+    zip -r archive_name.zip folder_to_compress
+
+  To extract
+    unzip archive_name.zip
+
+  Make a zip without those invisible Mac resource files such
+    zip -r -X archive_name.zip folder_to_compress
+
+TAR.GZ – Cross Platform
+  To compress
+    tar -zcvf archive_name.tar.gz folder_to_compress
+
+  To extract
+    tar -zxvf archive_name.tar.gz
+
+TAR.BZ2 – Cross Platform
+  To compress
+    tar -jcvf archive_name.tar.bz2 folder_to_compress
+
+  To extract
+    tar -jxvf archive_name.tar.bz2
+
+GZ
+  To extract
+    gunzip archivename.gz
+
+DMG – macOS Only
+  To create
+    hdiutil create -format UDZO -srcfolder folder_to_compress archive_name.dmg
+
+  To mount
+    hdiutil attach archive_name.dmg
+
+  To view
+    ls -lah /Volumes/archive_name/
+
+  To Eject
+    hdiutil eject /Volumes/archive_name/
+
+    .dmg formats
+      UDZO – Compressed image (default)
+      UDRO – Read only image
+      UDBZ – Better compressed image
+      UDRW – Read/Write image
+      UDTO – DVD disk image

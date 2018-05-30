@@ -1,0 +1,19 @@
+Downloading files from the internet -
+# set download url
+set(GCC_URL https://www.filelocation.com/file.tar.gz2)
+
+# set file save location
+set(GCC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../tools/)
+
+# set file name
+set(GCC_NAME gcc-arm-none-eabi-6-2017-q2-update)
+
+# download the file to the directory with specified name
+file(DOWNLOAD ${GCC_URL} "${GCC_DIR}/${GCC_NAME}" SHOW_PROGRESS)
+
+
+Extracting a file - (tested in windows/mac/linux)
+execute_process(
+        COMMAND ${CMAKE_COMMAND} -E tar jxvf "${GCC_DIR}/${GCC_NAME}/${GCC_NAME}${GCC_NAME_EXTENSION}" # path to file
+        WORKING_DIRECTORY ${GCC_DIR}/${GCC_NAME}/
+)

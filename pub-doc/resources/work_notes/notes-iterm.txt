@@ -1,0 +1,12 @@
+Setting terminal alias
+  vi ~/.bashrc
+
+Setting terminal profile
+  vi ~/.bash_profile
+  source ~/.bashrc #updates to new bashrc 
+
+Show full path in terminal
+  export PS1='\u@\H:\w$ '
+
+Prev cmd by letter
+  ctrl - r
