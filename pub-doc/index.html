@@ -1,129 +1,174 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Useful Stuff</title>
-  <meta name="description" content="Tips and tricks I want to remember">
-  <meta name="author" content="Jonathon Greene">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="bootstrap-4.1.1-dist/js/bootstrap.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Jonathon Greene</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- jQuery library -->
-  <script src="jquery/src/jquery.js"></script>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <div class="container">
+      <div class="row">
+        <div id="first-element" class="col-md-12">
+          <div class="jumbotron">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="bootstrap-4.1.1-dist/js/bootstrap.js"></script>
-
-</head>
-
-<body>
-  <h3>How to fix "system program problem detected"</h3>
-  <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
-
-  <h3>Error while loading shared libraries</h3>
-  <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
-
-  <h3>Git tips</h3>
-    <ul>
-      <li>
-        git tricks-
-        Create a "bare" central repository (they shouldn’t have a working directory):
-        <ul>
-          <li>
-            ssh user@host git init --bare /path/to/repo.git
-          </li>
-        </ul>
-      </li>
-      <li>
-        View the state of the repo:
-        <ul>
-          <li>
-            git status
-          </li>
-        </ul>
-      </li>
-      <li>
-        Stage a file:
-        <ul>
-          <li>
-            git add <some-file>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Commit a file:
-        <ul>
-          <li>
-            git commit <some-file>
-          </li>
-        </ul>
-      </li>
-      <li>
-        push local commits:
-        <ul>
-          <li>
-            git push origin master
-          </li>
-        </ul>
-      </li>
-      <li>
-        re-base branch:
-        <ul>
-          <li>
-            git pull --rebase origin master
-          </li>
-        </ul>
-      </li>
-      <li>
-        cancel/abort a rebase operation:
-        <ul>
-          <li>
-            git rebase --abort
-          </li>
-        </ul>
-      </li>
-      <li>
-        NOTE: The --rebase option tells Git to move all of the local commits to the tip
-        of the master branch after synchronising it with the changes from the central
-        repository (this is a superior option than a merge commit)
-      </li>
-      <li>
-        are we going to use pull requests??
-      </li>
-      <li>
-        Feature branch (https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)-
-        <ul>
-          <li>
-            git checkout master <br>
-            git fetch origin <br>
-            git reset --hard origin/master
-          </li>
-        </ul>
-      </li>
-      <li>
-        Checkout or if non existent create a branch-
-        <ul>
-          <li>
-            git checkout -b new-feature
-          </li>
-        </ul>
-      </li>
-      <li>
-        Update, add, commit, and push changes <br>
-        git status <br>
-        git add <some-file> <br>
-        git commit
-      </li>
-      <li>
-        Push feature branch to remote
-        <ul>
-          <li>
-            git push -u origin new-feature
-          </li>
-        </ul>
-      </li>
-    </ul>
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+          <div class="jumbotron">
+            <h3>Git tips</h3>
+            <ul>
+              <li>
+                git tricks-
+                Create a "bare" central repository (they shouldn’t have a working directory):
+                <ul>
+                  <li>
+                    ssh user@host git init --bare /path/to/repo.git
+                  </li>
+                </ul>
+              </li>
+              <li>
+                View the state of the repo:
+                <ul>
+                  <li>
+                    git status
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Stage a file:
+                <ul>
+                  <li>
+                    git add <some-file>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Commit a file:
+                <ul>
+                  <li>
+                    git commit <some-file>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                push local commits:
+                <ul>
+                  <li>
+                    git push origin master
+                  </li>
+                </ul>
+              </li>
+              <li>
+                re-base branch:
+                <ul>
+                  <li>
+                    git pull --rebase origin master
+                  </li>
+                </ul>
+              </li>
+              <li>
+                cancel/abort a rebase operation:
+                <ul>
+                  <li>
+                    git rebase --abort
+                  </li>
+                </ul>
+              </li>
+              <li>
+                NOTE: The --rebase option tells Git to move all of the local commits to the tip
+                of the master branch after synchronising it with the changes from the central
+                repository (this is a superior option than a merge commit)
+              </li>
+              <li>
+                are we going to use pull requests??
+              </li>
+              <li>
+                Feature branch (https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)-
+                <ul>
+                  <li>
+                    git checkout master
+                  </li>
+                  <li>
+                    git fetch origin
+                  </li>
+                  <li>
+                    git reset --hard origin/master
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Checkout or if non existent create a branch-
+                <ul>
+                  <li>
+                    git checkout -b new-feature
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Update, add, commit, and push changes <br>
+                git status <br>
+                git add <some-file> <br>
+                git commit
+              </li>
+              <li>
+                Push feature branch to remote
+                <ul>
+                  <li>
+                    git push -u origin new-feature
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
