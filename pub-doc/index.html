@@ -11,7 +11,8 @@
     <title>Jonathon Greene</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav id="top-nav" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Notes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,23 +47,52 @@
           </form>
         </div>
       </nav>
-    <div class="container">
-      <div class="row">
-        <div id="first-element" class="col-md-12">
-          <div class="jumbotron">
+    <div id="selected-content-parent" class="jumbotron col-md-7 hide-element">
+      <div class="container">
+        <div id="selected-content" class="row">
+          <p>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+            Content is shown here when clicked<br><br><br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div id="click-space" class="hide-element"></div>
+    <div id="main-content" class="container">
+      <div id="first-element" class="row">
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+        </div>
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
             <h3>How to fix "system program problem detected"</h3>
             <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
 
             <h3>Error while loading shared libraries</h3>
             <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
           </div>
-          <div class="jumbotron">
+        </div>
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
             <h3>Git tips</h3>
             <ul>
               <li>
                 git tricks-
                 Create a "bare" central repository (they shouldn’t have a working directory):
-                <ul>
+                <!-- <ul>
                   <li>
                     ssh user@host git init --bare /path/to/repo.git
                   </li>
@@ -159,8 +189,66 @@
                     git push -u origin new-feature
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+        </div>
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+        </div>
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+        </div>
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
+          </div>
+        </div>
+        <div class="col note-element">
+          <div class="jumbotron clickable-items">
+            <h3>How to fix "system program problem detected"</h3>
+            <p>sudo rm /var/crash/* <br> https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/</p>
+
+            <h3>Error while loading shared libraries</h3>
+            <p>sudo /sbin/ldconfig -v <br> https://itsfoss.com/error-while-loading-shared-libraries/</p>
           </div>
         </div>
       </div>
@@ -170,5 +258,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
