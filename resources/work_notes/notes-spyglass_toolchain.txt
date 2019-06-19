@@ -1,7 +1,0 @@
-Mac -
-VirtualBox with Ubuntu 16.04 LTS required if using windows machine.
-Install Xcode: http://developer.apple.com/tools/download/
-Install MacPorts: High Sierra, Sierra, El Capitan, Yosemite,Mavericks, Mountain Lion, Lion, Snow Leopard, Leopard or Tiger.
-Update ports via terminal commands:
-"sudo port -v selfupdate"
-"port upgrade outdated"
